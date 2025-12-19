@@ -1,4 +1,5 @@
 // src/App.tsx
+import { useYourIdAuth } from "./sdk/useYourIDAuth";
 
 function App() {
   useYourIdAuth({

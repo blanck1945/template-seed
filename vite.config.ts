@@ -5,18 +5,7 @@ import federation from "@originjs/vite-plugin-federation";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-    federation({
-      name: "remote-seed",
-      filename: "remoteEntry.js",
-      exposes: {
-        "./App": "./src/App.tsx",
-      },
-      shared: ["react", "react-dom", "react-router"],
-    }),
-  ],
+  plugins: [react(), tailwindcss(), federation({})],
   build: {
     target: "esnext",
     minify: false,
